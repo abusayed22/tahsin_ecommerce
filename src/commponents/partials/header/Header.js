@@ -1,21 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 import logo from "../Screenshot_1.png"
 import './Header.css'
+import 'animate.css';
 
 function Header() {
+ 
+
   return <div>
        <nav className="navbar navbar-expand-lg bg-light">
   <div className="container">
     <Link className="navbar-brand for__catagory" to="#">
+      
       <img width={120} src={logo} alt="logo" />
         <div className="catagory__list">
-          <ul>
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
+        
+          <ul className="animate-charcter">
+            <li 
+            
+            >Mens</li>
+            <li>Ladies</li>
+            <li>Babys</li>
+            <li>Shirts</li>
+            <li>pants</li>
+            <li>Tops</li>
+            <li>Saree</li>
+            <li>T-shirt</li>
           </ul>
         </div>
     </Link>
@@ -45,18 +55,7 @@ function Header() {
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="#">
-                <form className="d-flex" role="search">
-              <input
-                style={{width:'100%'}}
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+            
           </Link>
         </li>
 
@@ -95,14 +94,22 @@ function Header() {
           </ul> */}
 
         </li>
-        <li className="nav-item">
-          <Link to="" className="nav-link to disabled">
-            <span>shop</span>
-            <span>account</span>
-          </Link>
-        </li>
+        
       </ul>
 
+      <form className="input__box d-flex" role="search">
+              <input
+                style={{width:'100%'}}
+                className="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button className="btn btn-outline-danger" type="submit">
+                Search
+              </button>
+            </form>
+           
       {/* cilo */}
     </div>
   </div>

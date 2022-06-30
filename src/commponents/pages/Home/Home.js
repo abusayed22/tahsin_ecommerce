@@ -1,8 +1,9 @@
 import React from "react";
+import Card from "../Card/Card";
 
 function Home() {
   return <div>
-        <center>hello home</center>
+        <Card />
   </div>;
 }
 
